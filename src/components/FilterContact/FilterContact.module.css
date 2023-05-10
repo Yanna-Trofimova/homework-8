@@ -1,0 +1,15 @@
+.div{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.input {
+width: 308px;
+    height: 20px;
+    margin-top:  10px;
+}

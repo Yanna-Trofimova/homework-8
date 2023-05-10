@@ -1,0 +1,15 @@
+
+
+    .link {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        padding: 30px;
+      }
+  
+  
+  /* .link.active {
+    color: #e84a5f;
+  } */
+  

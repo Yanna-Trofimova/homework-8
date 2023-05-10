@@ -1,0 +1,32 @@
+.div {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 28px;
+    gap: 6px;
+
+
+width: 95px;
+    height: 30px;
+    border: none;
+   
+    border-radius: 10.3108px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    font-weight: 600;
+    font-size: 13px;
+    color: white;
+   background-color: rgb(181, 84, 84);
+}
+
+.btn:hover {
+    background-color: #d6d3d3;
+    cursor: pointer;
+}

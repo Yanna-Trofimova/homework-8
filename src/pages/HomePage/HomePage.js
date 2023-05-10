@@ -6,7 +6,7 @@ export default function Home() {
       <h1 className={css.title}
       >
         Hello,
-        Welcome to your PHONEBOOK
+        Welcome to your PHONEBOOK!
        
       </h1>
     </div>

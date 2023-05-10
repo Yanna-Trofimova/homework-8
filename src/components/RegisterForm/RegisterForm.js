@@ -1,7 +1,5 @@
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/auth-operation';
-// import Button from '@mui/material/Button';
-// import TextField from '@mui/material/TextField';
 import css from './RegisterForm.module.css';
 
 export const RegisterForm = () => {
@@ -17,7 +15,7 @@ export const RegisterForm = () => {
         password: form.elements.password.value,
       })
     );
-    form.reset();
+    
   };
 
   return (

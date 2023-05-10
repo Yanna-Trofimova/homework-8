@@ -7,13 +7,9 @@ import { RestrictedRoute } from './RestrictedRoute';
 import { refreshUser } from 'redux/auth/auth-operation';
 import { useAuth } from 'hooks/useAuth';
 import { lazy } from 'react';
+import NonExistentPage from 'pages/NonExistentPage';
 
 
-
-// const HomePage = lazy(() => import('../pages/Home'));
-// const RegisterPage = lazy(() => import('../pages/Register'));
-// const LoginPage = lazy(() => import('../pages/Login'));
-// const ContactsPage = lazy(() => import('../pages/Contacts'));
 const HomePage = lazy(()=> import('../pages/HomePage/HomePage'));
 const RegisterPage = lazy(() => import('../pages/RegisterPage'));
 const LoginPage = lazy(() => import('../pages/LoginPage'));
@@ -37,8 +33,9 @@ export const App = () => {
           
           <Route path="/login" element={<RestrictedRoute redirectTo="/contacts" component={<LoginPage />} />} />
           
-          <Route path="/contacts"  element={<PrivateRoute redirectTo="/login" component={<ContactsPage />} />  }  />
-            
+          <Route path="/contacts" element={<PrivateRoute redirectTo="/login" component={<ContactsPage />} />} />
+          
+          <Route path="*" element={<NonExistentPage/>} />
         </Route>
        
     </Routes>
